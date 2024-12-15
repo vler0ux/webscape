@@ -84,7 +84,7 @@
 
   <script>
     // Réponse correcte
-    const correctAnswer = "ILOVEYOU";
+    const correctAnswer = "iloveyou";
 
     // Références des éléments HTML
     const input = document.getElementById("answer-input");
@@ -95,9 +95,9 @@
 
     // Ajouter un écouteur d'événement sur le bouton
     button.addEventListener("click", () => {
-      const userAnswer = input.value.toLowerCase().trim(); // Récupère et normalise la réponse de l'utilisateur
+      const userAnswer = input.value.trim(); // Récupère et normalise la réponse de l'utilisateur
       
-      if (userAnswer === correctAnswer) {
+      if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
         // Si la réponse est correcte
         message.textContent = "Correct! Well done!🎉"; 
         message.style.color = "green"; 
@@ -106,6 +106,7 @@
         setTimeout(() => {
                     window.location.href = "index.html"; 
                 }, 3000); 
+                document.getElementById("answer-input" ).value = "";
       } else {
 
         // Si la réponse est incorrecte
@@ -116,8 +117,11 @@
       setTimeout(() => {
           window.location.href = "index.html"; // Redirection après 3 secondes
       }, 3000)}
-      
-    });
+      document.getElementById("answer-input" ).value = "";
+    }
+  );
+
+  
   </script>
 
   </main>

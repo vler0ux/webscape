@@ -20,3 +20,12 @@
 
 This addon adds an extra layer of fun and engagement to the traditional Webscape board game, making learning about the web an exciting challenge!
 
+**Here is a demo of the add-on**
+<br>
+
+<video width="640" height="360" controls>
+  <source src="webscape_demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
